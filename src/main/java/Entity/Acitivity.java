@@ -16,6 +16,9 @@ public class Acitivity {
         this.end = end;
     }
 
+    public Acitivity(int id, String name, int i, int i1) {
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

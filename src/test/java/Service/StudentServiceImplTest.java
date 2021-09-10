@@ -25,10 +25,10 @@ class StudentServiceImplTest {
     public void init(){
         studentDao = mock(StudentDao.class);
         when(studentDao.getStudents()).thenReturn(Arrays.asList(
-                new Student("CC","sam","2020567890"),
-                new Student("CC","sam","2020567891"),
-                new Student("CC","sam","2019567888"),
-                new Student("CC","sam","2018567123")
+                new Student("book","supakorn","2020567890"),
+                new Student("mew","sami","2020567891"),
+                new Student("varee","bejaibee","2019567888"),
+                new Student("nong","nisaret","2018567123")
         ));
     }
     @Test
@@ -39,10 +39,10 @@ class StudentServiceImplTest {
         List<Student> actual = studentService.getStudents();
         assertThat(actual.size(),is(4));
         assertThat(actual, containsInAnyOrder(
-                new Student("CC","sam","2020567890"),
-                new Student("CC","sam","2020567891"),
-                new Student("CC","sam","2019567888"),
-                new Student("CC","sam","2018567123")
+                new Student("book","supakorn","2020567890"),
+                new Student("mew","sami","2020567891"),
+                new Student("varee","bejaibee","2019567888"),
+                new Student("nong","nisaret","2018567123")
         ));
     }
 }
