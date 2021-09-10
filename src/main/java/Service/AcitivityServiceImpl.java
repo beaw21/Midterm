@@ -33,12 +33,16 @@ public class AcitivityServiceImpl implements ActivityService{
     public void setActivityDao(ActivityDao activityDao){
         this.activityDao = activityDao ;
     }
-    @Override
-    public List<Acitivity> getActivityList(Date begin, Date end) {
+    public List<Acitivity> getActivityList(int begin, int end) {
         return null;
     }
     
     public Object isInDate(Date begin, Date end){
+        return null;
+    }
+
+    @Override
+    public List<Acitivity> getActivityList(Date begin, Date end) {
         return null;
     }
 }

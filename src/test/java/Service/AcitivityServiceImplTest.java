@@ -35,6 +35,7 @@ class AcitivityServiceImplTest {
                   new Acitivity(1,"som", 2020-1-2,2020-5-11)
           )
         );
+        assertThat(acitivityService.getActivityList(2020-1-2,2020-5-11),theInstance(2020-1-2));
     }
 
 }
