@@ -36,6 +36,8 @@ class AcitivityServiceImplTest {
           )
         );
         assertThat(acitivityService.getActivityList(2020-1-2,2020-5-11),theInstance(2020-1-2));
+
+        verify(activityDao,times(1));
     }
 
 }

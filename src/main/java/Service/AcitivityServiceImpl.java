@@ -38,11 +38,12 @@ public class AcitivityServiceImpl implements ActivityService{
     }
     
     public Object isInDate(Date begin, Date end){
-        return null;
+      return activityDao.getActivities();
     }
 
     @Override
     public List<Acitivity> getActivityList(Date begin, Date end) {
-        return null;
+        return activityDao.getActivities();
+
     }
 }
