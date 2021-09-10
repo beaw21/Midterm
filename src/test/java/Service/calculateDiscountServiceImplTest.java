@@ -59,16 +59,16 @@ class calculateDiscountServiceImplTest {
         when(calculateDiscountDao.getDiscountWhite()).thenReturn(
                 Arrays.asList(
                         new calculateDiscount(2,15200.00)));
-        assertThat(calculateDiscountService.getDiscountPlatinum(),is(closeTo(14744.00,0.001)));
+        assertThat(calculateDiscountService.getDiscountWhite(),is(closeTo(14744.00,0.001)));
 
         when(calculateDiscountDao.getDiscountWhite()).thenReturn(
                 Arrays.asList(
                         new calculateDiscount(2,25000.00)));
-        assertThat(calculateDiscountService.getDiscountPlatinum(),is(closeTo(23750.00,0.001)));
+        assertThat(calculateDiscountService.getDiscountWhite(),is(closeTo(23750.00,0.001)));
 
         when(calculateDiscountDao.getDiscountWhite()).thenReturn(
                 Arrays.asList(
                         new calculateDiscount(2,60000.00)));
-        assertThat(calculateDiscountService.getDiscountPlatinum(),is(closeTo(54000.00,0.001)));
+        assertThat(calculateDiscountService.getDiscountWhite(),is(closeTo(54000.00,0.001)));
     }
 }

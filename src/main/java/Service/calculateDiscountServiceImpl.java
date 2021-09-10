@@ -29,7 +29,6 @@ public class calculateDiscountServiceImpl implements calculateDiscountService{
 
     @Override
     public List<calculateDiscount> getDiscountWhite() {
-        List<calculateDiscount> output = calculateDiscountDao.getDiscountWhite();
-        return output;
+       return calculateDiscountDao.getDiscountWhite();
     }
 }
